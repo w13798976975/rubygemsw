@@ -1,0 +1,33 @@
+name: ore
+summary: Generate perfect Ruby gems
+description:
+  Ore is a fully configurable and extendable Ruby gem generator. With Ore you
+  spend less time editing files, and more time writing code.
+
+license: MIT
+authors: Postmodern
+email: postmodern.mod3@gmail.com
+homepage: https://github.com/ruby-ore/ore#readme
+post_install_message: |
+  **************************************************************************
+  Generate a new Ruby library:
+  
+      $ mine my_library --rspec --yard
+  
+  Build the library:
+  
+      $ rake build
+  
+  Release the library to rubygems.org:
+  
+      $ rake release
+  
+  **************************************************************************
+
+required_ruby_version: ">= 1.9.1"
+
+dependencies:
+  thor: ~> 0.15
+
+development_dependencies:
+  bundler: ~> 1.0
